@@ -1,4 +1,4 @@
-name: 生成x86-64-config
+name: 生成x86-64-config（自用）
 
 on:
   repository_dispatch:
