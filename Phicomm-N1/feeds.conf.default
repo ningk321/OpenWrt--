@@ -4,4 +4,3 @@ src-git routing https://github.com/coolsnowwolf/routing
 src-git telephony https://git.openwrt.org/feed/telephony.git
 
 src-git pkgs https://github.com/ysx88/openwrt-packages
-1
