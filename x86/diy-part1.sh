@@ -7,7 +7,6 @@
 
 
 
-
 mkdir wget
 
 cat>rename.sh<<-\EOF
