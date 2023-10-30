@@ -105,10 +105,10 @@ jobs:
       run: |
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
         touch release.txt
-        echo -e "- 这是个平台固件包，内含多个设备！\n" >> release.txt
-        echo -e "- 请注意选择你需要的设备固件！\n" >> release.txt
-        echo -e "- 默认管理地址：\`192.168.1.1\`\n" >> release.txt
-        echo -e "- 默认密码：\`password\`\n" >> release.txt
+        echo -e "- ⭐️这是个平台固件包，内含多个设备！\n" >> release.txt
+        echo -e "- ⭐️请注意选择你需要的设备固件！\n" >> release.txt
+        echo -e "- 🔴默认管理地址：\`192.168.1.1\`\n" >> release.txt
+        echo -e "- 🔴默认密码：\`password\`\n" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
