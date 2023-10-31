@@ -50,3 +50,8 @@ svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/l
 pushd package/luci-app-openclash/tools/po2lmo
 make && sudo make install
 popd
+
+# 调整alist到服务菜单
+sed -i 's/nas/services/g' feeds/luci/applications/luci-app-alist/luasrc/controller/*.lua
+sed -i 's/nas/services/g' feeds/luci/applications/luci-app-alist/luasrc/model/cbi/alist/*.lua
+sed -i 's/nas/services/g' feeds/luci/applications/luci-app-alist/luasrc/view/alist/*.htm
