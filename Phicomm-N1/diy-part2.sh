@@ -21,10 +21,3 @@ cp -f $GITHUB_WORKSPACE/diy/bg1.jpg package/luci-theme-argon/htdocs/luci-static/
 
 # replace banner
 cp -f $GITHUB_WORKSPACE/diy/banner package/base-files/files/etc/banner
-
-# 科学上网插件依赖
-svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-# 编译 po2lmo (如果有po2lmo可跳过)
-pushd package/luci-app-openclash/tools/po2lmo
-make && sudo make install
-popd
