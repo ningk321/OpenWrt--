@@ -21,3 +21,6 @@ cp -f $GITHUB_WORKSPACE/diy/bg1.jpg package/luci-theme-argon/htdocs/luci-static/
 
 # replace banner
 cp -f $GITHUB_WORKSPACE/diy/banner package/base-files/files/etc/banner
+
+# 修改概览里时间显示为中文数字
+sed -i 's/os.date()/os.date("%Y年%m月%d日") .. " " .. translate(os.date("%A")) .. " " .. os.date("%X")/g' package/lean/autocore/files/x86/index.htm
