@@ -1,4 +1,4 @@
-name: 生成r2s-config
+name: 生成r2s-config（自用）
 
 on:
   repository_dispatch:
