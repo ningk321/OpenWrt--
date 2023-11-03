@@ -1,4 +1,4 @@
-name: 编译Rockchip固件
+name: 编译Rockchip-R2S固件
 
 on:
   repository_dispatch:
@@ -11,7 +11,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: Rockchip/feeds.conf.default
-  CONFIG_FILE: Rockchip/rockchip.config
+  CONFIG_FILE: r2s/r2s_la.config
   DIY_P1_SH: Rockchip/diy-part1.sh
   DIY_P2_SH: Rockchip/diy-part2.sh
   UPLOAD_RELEASE: true
